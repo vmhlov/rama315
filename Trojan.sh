@@ -18,21 +18,16 @@ local-port: $PORT
 remote-addr: example.com
 remote-port: 80
 log-level: 5
-password:
-    - 123456
+password: 123456
+
 websocket:
   enabled: true
   path: /
 transport-plugin:
   enabled: true
   type: plaintext
-  
-
-
-
-
 EOF
 
 # Run Trojan-go
 /usr/local/bin/trojan-go -config /usr/local/etc/trojan-go/config.yaml
-cat /usr/local/etc/trojan-go/config.yaml
+
