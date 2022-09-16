@@ -1,8 +1,8 @@
 {
     "name": "rama315",
-    "description": "rama315.",
+    "description": "rama315",
     "env": {
-  "PASSWORD": {
+        "PASSWORD": {
             "description": "PASSWORD",
             "value": "password"
         }
