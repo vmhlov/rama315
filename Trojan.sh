@@ -19,7 +19,7 @@ remote-addr: example.com
 remote-port: 80
 log-level: 5
 password:
-    - $PASSWORD
+    - pass
 websocket:
   enabled: true
   path: /
