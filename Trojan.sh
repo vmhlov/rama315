@@ -33,11 +33,8 @@ echo ${PASSWORD}
 export PASSWORD_JSON="$(echo -n "$PASSWORD" | jq -Rc)"
 if [[ -z "${QR_Path}" ]]; then
   export QR_Path="/qr_img"
-fi
-echo ${QR_Path}
-bash /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf
-echo /etc/nginx/conf.d/ss.conf
-cat /etc/nginx/conf.d/ss.conf
+
+
 
 
 EOF
