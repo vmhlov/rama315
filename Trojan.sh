@@ -26,7 +26,22 @@ websocket:
 transport-plugin:
   enabled: true
   type: plaintext
+  if [[ -z "${PASSWORD}" ]]; then
+  export PASSWORD="5c301bb8-6c77-41a0-a606-4ba11bbab084"
+fi
+echo ${PASSWORD}
+export PASSWORD_JSON="$(echo -n "$PASSWORD" | jq -Rc)"
+if [[ -z "${QR_Path}" ]]; then
+  export QR_Path="/qr_img"
+fi
+echo ${QR_Path}
+bash /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf
+echo /etc/nginx/conf.d/ss.conf
+cat /etc/nginx/conf.d/ss.conf
+
+
 EOF
 
 # Run Trojan-go
 /usr/local/bin/trojan-go -config /usr/local/etc/trojan-go/config.yaml
+cat /usr/local/etc/trojan-go/config.yaml
