@@ -19,20 +19,14 @@ remote-addr: example.com
 remote-port: 80
 log-level: 5
 password:
-    - $PASSWORD
+    - 123456
 websocket:
   enabled: true
   path: /
 transport-plugin:
   enabled: true
   type: plaintext
-  if [[ -z "${PASSWORD}" ]]; then
-  export PASSWORD="5c301bb8-6c77-41a0-a606-4ba11bbab084"
-fi
-echo ${PASSWORD}
-export PASSWORD_JSON="$(echo -n "$PASSWORD" | jq -Rc)"
-if [[ -z "${QR_Path}" ]]; then
-  export QR_Path="/qr_img"
+  
 
 
 
