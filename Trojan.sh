@@ -18,8 +18,8 @@ local-port: $PORT
 remote-addr: example.com
 remote-port: 80
 log-level: 5
-password: 123456
-
+password:
+    - $PASSWORD
 websocket:
   enabled: true
   path: /
