@@ -5,3 +5,4 @@
 ### ☁️ Deploy to Render
 
 [![Deploy with Edgio](https://docs.edg.io/button.svg)](https://app.layer0.co/deploy?repo=https://github.com/vmhlov/rama315)
+[![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=https://github.com/vmhlov/rama315)
